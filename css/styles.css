@@ -523,7 +523,7 @@ body {
 	background-color: rgb(49, 208, 170);
 }
 
-/* --------------modal--------------- */
+/* --------------Modal--------------- */
 
 .backdrop {
 	position: fixed;
@@ -571,17 +571,17 @@ body {
 
 	cursor: pointer;
 
-  color: rgb(0, 0, 0);
+	color: rgb(0, 0, 0);
 }
 
-.btn-icon:is(:hover,:focus){
-  border: none;
-  background-color: var(--accent-color-2);
-  color: var(--hero-title-text-color);
+.btn-icon:is(:hover, :focus) {
+	border: none;
+	background-color: var(--accent-color-2);
+	color: var(--hero-title-text-color);
 }
 
 .modal-icon {
-  fill: currentColor;
+	fill: currentColor;
 }
 
 /* --------------Page 2------------ */
