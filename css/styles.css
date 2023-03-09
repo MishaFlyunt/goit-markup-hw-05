@@ -123,6 +123,10 @@ body {
 	color: var(--primary-text-bg-color);
 
 	position: relative;
+
+	transition-property: color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current::after {
@@ -137,10 +141,6 @@ body {
 
 	background-color: var(--accent-color-2);
 	border-radius: 2px;
-
-	/* transition-property: background-color;
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .header-contact {
@@ -157,6 +157,10 @@ body {
 
 	font-weight: 400;
 	color: var(--description-tel-mail-color);
+
+	transition-property: color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contact .link:hover,
@@ -164,10 +168,6 @@ body {
 .header-link.link:hover,
 .header-link.link:focus {
 	color: var(--accent-color);
-
-	transition-property: background-color;
-	transition-duration: 2s;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-link.current {
 	color: var(--accent-color);
@@ -220,11 +220,15 @@ body {
 	letter-spacing: 0.04em;
 	color: var(--hero-title-text-color);
 	cursor: pointer;
+
+	transition-property: background-color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
-	background: var(--accent-color-2);
+	background-color: var(--accent-color-2);
 }
 
 /* --------------ABOUT-------------- */
@@ -387,6 +391,10 @@ body {
 	height: 100%;
 	border-radius: 50%;
 	background-color: var(--accent-color);
+
+	transition-property: background-color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-social-link:hover,
@@ -431,15 +439,23 @@ body {
 	height: 100%;
 
 	color: #8e8f99;
+
+	transition-property: border-color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.company-icon {
+	fill: currentColor;
+
+	transition-property: color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .company-link:is(:hover, :focus) {
 	border-color: var(--accent-color-2);
 	color: var(--accent-color-2);
-}
-
-.company-icon {
-	fill: currentColor;
 }
 
 /* ----------FOOTER---------- */
@@ -516,6 +532,10 @@ body {
 	border-radius: 50%;
 
 	background-color: rgba(255, 255, 255, 0.1);
+
+	transition-property: background-color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-link:hover,
@@ -572,6 +592,10 @@ body {
 	cursor: pointer;
 
 	color: rgb(0, 0, 0);
+
+	transition-property: background-color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-icon:is(:hover, :focus) {
@@ -582,6 +606,10 @@ body {
 
 .modal-icon {
 	fill: currentColor;
+
+	transition-property: color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* --------------Page 2------------ */
@@ -607,7 +635,7 @@ body {
 .btn {
 	padding: 12px 24px;
 
-	background: var(--bg-btn-foot-color);
+	background-color: var(--bg-btn-foot-color);
 	border-radius: 4px;
 	border: 1px solid var(--primary-border-color);
 
@@ -619,6 +647,10 @@ body {
 	color: var(--accent-color);
 
 	cursor: pointer;
+
+	transition-property: background-color, color, border-color, box-shadow;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn:hover,
@@ -626,7 +658,6 @@ body {
 	background-color: var(--accent-color-2);
 	border-color: var(--accent-color-2);
 	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-
 	color: var(--hero-title-text-color);
 }
 
@@ -644,6 +675,10 @@ body {
 
 .benefits-link {
 	color: inherit;
+
+	transition-property: box-shadow;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .benefits-link:hover {
@@ -662,14 +697,17 @@ body {
 	background-color: var(--accent-color);
 
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	/* top: 50%;
+	left: 50%; */
+	/* transform: translate(-50%, -50%); */
+
+	transform: translateY(0);
 
 	opacity: 0;
 }
 
 .benefits-text:hover {
+	transform: translateY(-100%);
 	opacity: 0.9;
 }
 
